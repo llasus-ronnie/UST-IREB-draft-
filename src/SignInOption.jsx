@@ -1,10 +1,9 @@
-import { Container, Col, Row } from 'react-bootstrap'
+import { Container, Col, Row, Button } from 'react-bootstrap'
 import { Helmet } from 'react-helmet'
-import bg from './assets/SignIn/bg.png'
+import bg2 from './assets/SignIn/bg-2.png'
 import logo from './assets/SignIn/USTLogo.png'
 import './styles/SignIn.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { GoogleLogin } from '@react-oauth/google'
 
 function SignIn() {
   const responseMessage = (response) => {
@@ -23,7 +22,7 @@ const errorMessage = (error) => {
       <Container className='cont-border'>
           <Row className="justify-content-md-center g-0">
               <Col>
-                <img src={bg} alt="" className='bg' />
+                <img src={bg2} alt="" className='bg' />
               </Col>
               <Col style={{marginTop: '66px'}}>
               
@@ -35,14 +34,16 @@ const errorMessage = (error) => {
 
               <h1 className='signin'>Sign In</h1>
 
-              <p className='text'>Welcome, Thomasian! To access all IREB research portal submission features, sign in with your UST Google Account.</p>
-              <GoogleLogin className='google' onSuccess={responseMessage} onError={errorMessage} />
+              <p className='text'>Kindly select your category to log in. </p>
+
+              <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center'}}>
+                <Button variant="outline-warning" href='/SignInOption' className='button'>Thomasian Primary Investigator</Button>
+                <p style={{fontFamily: 'Poppins'}}>or</p>
+                <Button variant="outline-warning" href='/SignInOption' className='button'>External Primary Investigator</Button>
+              </div>
 
               <hr ></hr>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='/' style={{color: '#8B8B8B'}}>Terms of Service</a></p>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='/' style={{color: '#8B8B8B'}}>Privacy Policy</a></p>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='/' style={{color: '#8B8B8B'}}>Help</a></p>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='/SignInOption' style={{color: '#FCBF15'}}>Return to Home</a></p>
+              <p className='help d-inline'><a href='/' style={{color: '#FCBF15'}}>Return to Home</a></p>
 
               </Col>
           </Row>
