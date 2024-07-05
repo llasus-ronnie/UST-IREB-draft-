@@ -6,12 +6,6 @@ import './styles/SignIn.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function SignIn() {
-  const responseMessage = (response) => {
-    console.log(response);
-};
-const errorMessage = (error) => {
-    console.log(error);
-};
   return (
     <div className='cont'>
       <Helmet>
@@ -24,7 +18,7 @@ const errorMessage = (error) => {
               <Col>
                 <img src={bg2} alt="" className='bg' />
               </Col>
-              <Col style={{marginTop: '66px'}}>
+              <Col style={{marginTop: '46px'}}>
               
               <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center'}}>
               <img src={logo} alt="" className='logo d-inline' />
@@ -36,10 +30,10 @@ const errorMessage = (error) => {
 
               <p className='text'>Kindly select your category to log in. </p>
 
-              <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center'}}>
-                <Button variant="outline-warning" href='/SignInOption' className='button'>Thomasian Primary Investigator</Button>
+              <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center', marginTop: '40px'}}>
+                <Button variant="outline-warning" href='/' className='button'>Thomasian Primary Investigator</Button>
                 <p style={{fontFamily: 'Poppins'}}>or</p>
-                <Button variant="outline-warning" href='/SignInOption' className='button'>External Primary Investigator</Button>
+                <Button variant="outline-warning" href='/SignInExternal' className='button'>External Primary Investigator</Button>
               </div>
 
               <hr ></hr>
