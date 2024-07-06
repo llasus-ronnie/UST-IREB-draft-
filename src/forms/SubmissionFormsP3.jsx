@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import StepBar from '../components/Forms/StepBar'
+import Navbar from '../navbar/Navbar'
 import {Container, Col, Row, Form, FormText, FormLabel, FormCheck, Button} from 'react-bootstrap'
 
 function SubmissionFormP3() {
@@ -10,6 +11,7 @@ function SubmissionFormP3() {
             <title>Submission Forms</title>
             <style>{'body { background-color: #ECF0F1; }'}</style>  
         </Helmet>
+        <Navbar />
 
         <StepBar />
 
