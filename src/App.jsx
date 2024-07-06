@@ -12,7 +12,8 @@ function App() {
   return (
     <>
     <Routes>
-      <Route path="/" element={<SignIn />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/SignIn" element={<SignIn />} />
       <Route path="/SignInOption" element={<SignInOption />} />
       <Route path="/SignInExternal" element={<SignInExternal />} />
       <Route path="/SubmissionFormsP1" element={<SubmissionFormsP1 />} />

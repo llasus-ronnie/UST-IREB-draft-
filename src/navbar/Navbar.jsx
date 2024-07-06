@@ -48,12 +48,12 @@ export default function Navbar() {
                  <div className={`sidenav ${isOpen ? 'open' : ''}`}>
                     <div className='sidenav-account'>
                         <img src={userIcon} alt="" className="logout-icon"/>
-                        <a href="#">View Account</a>
+                        <a href="/SignInOption">View Account</a>
                     </div>
 
                     <div className='sidenav-links'>
                     <a href="#">Home</a>
-                    <a href="#">Submission Form</a>
+                    <a href="/SubmissionFormsP1">Submission Form</a>
                     <a href="#">View my Submissions</a>
                     <a href="#">FAQs</a>
                     </div>

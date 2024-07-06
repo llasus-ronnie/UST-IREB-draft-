@@ -31,7 +31,7 @@ function SignIn() {
               <p className='text'>Kindly select your category to log in. </p>
 
               <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center', marginTop: '40px'}}>
-                <Button variant="outline-warning" href='/' className='button'>Thomasian Primary Investigator</Button>
+                <Button variant="outline-warning" href='/SignIn' className='button'>Thomasian Primary Investigator</Button>
                 <p style={{fontFamily: 'Poppins'}}>or</p>
                 <Button variant="outline-warning" href='/SignInExternal' className='button'>External Primary Investigator</Button>
               </div>

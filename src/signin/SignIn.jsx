@@ -42,10 +42,10 @@ const errorMessage = (error) => {
               <GoogleLogin className='google' onSuccess={responseMessage} onError={errorMessage} />
 
               <hr ></hr>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='/' style={{color: '#8B8B8B'}}>Terms of Service</a></p>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='/' style={{color: '#8B8B8B'}}>Privacy Policy</a></p>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='/' style={{color: '#8B8B8B'}}>Help</a></p>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='/SignInOption' style={{color: '#FCBF15'}}>Return to Home</a></p>
+              <p className='help d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Terms of Service</a></p>
+              <p className='help d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Privacy Policy</a></p>
+              <p className='help d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Help</a></p>
+              <p className='help d-inline' style={{margin: '5px'}} ><a href='/' style={{color: '#FCBF15'}}>Return to Home</a></p>
 
               </Col>
           </Row>
