@@ -102,3 +102,14 @@ max-width: 1200px;
     background-color: white;
     max-width: 600px;
 }
+
+/* scroll design  */
+::-webkit-scrollbar{
+    background-color: var(--primary-color);
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+}

@@ -132,3 +132,14 @@ line-height: normal;
     height: 42px;
     margin-bottom: 30px;
 }
+
+/* scroll design  */
+::-webkit-scrollbar{
+    background-color: var(--primary-color);
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+}
