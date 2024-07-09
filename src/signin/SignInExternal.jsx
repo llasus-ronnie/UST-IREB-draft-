@@ -19,9 +19,9 @@ function SignIn() {
               <Col>
                 <img src={bg} alt="" className='bg' />
               </Col>
-              <Col style={{marginTop: '46px', marginRight:'40px'}}>
+              <Col className='SignInHeader'>
               
-              <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center'}}>
+              <div className='Sign'>
               <img src={logo} alt="" className='logo d-inline' />
               <h1 className='subtitle d-inline' style={{margin: '5px'}}><b className='title d-inline'>UST IREB</b> Research Portal</h1>
               </div>
@@ -30,13 +30,16 @@ function SignIn() {
 
               <Form>
                 <FormGroup>
-                    <FormLabel className='formtext'>Username</FormLabel>
-                    <input type='text' className='form-control formtext' />
-                    <FormLabel className='formtext'>Password</FormLabel>
-                    <input type='password' className='form-control formtext' />
+                  <div className='formtext'>
+                  <FormLabel>Username</FormLabel>
+                    <input type='text' className='form-control' />
+                    <FormLabel>Password</FormLabel>
+                    <input type='password' className='form-control' />
+                  </div>
+                  
                     <Row className='align-items-center'>
                       <Col>
-                      <ReCAPTCHA style={{transform:"scale(0.75)", transformOrigin:"0 0"}} className='captcha' sitekey="6LfgAgkqAAAAAC_WvkqfnkIF-NUvwHnVOPyDkD2G" size='normal' />  
+                      <ReCAPTCHA className='captcha' sitekey="6LfgAgkqAAAAAC_WvkqfnkIF-NUvwHnVOPyDkD2G" size='normal' />  
                       </Col>
                       <Col>
                       <Button variant="outline-warning" href='/' className='btnlogin'>Log In</Button>
@@ -46,10 +49,13 @@ function SignIn() {
               </Form>
 
               <hr ></hr>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Terms of Service</a></p>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Privacy Policy</a></p>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Help</a></p>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='/' style={{color: '#FCBF15'}}>Return to Home</a></p>
+              
+              <div className='help'>
+                <p className='d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Terms of Service</a></p>
+                <p className='d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Privacy Policy</a></p>
+                <p className='d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Help</a></p>
+                <p className='d-inline' style={{margin: '5px'}} ><a href='/' style={{color: '#FCBF15'}}>Return to Home</a></p>
+              </div>
 
               </Col>
           </Row>

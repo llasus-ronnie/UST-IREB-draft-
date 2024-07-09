@@ -14,9 +14,20 @@
     background-color: white;
 }
 
+.SignInHeader{
+    margin-top: 35px;
+    margin-right: 40px;
+}
+
+.Sign{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
 .bg{
-    width: 337px;
-    height: 464px;
+    width: 21.063em;
+    height: 29em;
 }
 
 .logo{
@@ -59,7 +70,6 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-width: 480px;
 }
 
 .google{
@@ -83,9 +93,8 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-width: 203px;
+max-width: 203px;
 height: 72px;
-flex-shrink: 0;
 border-radius: 15px;
 border: 2px solid #8B8B8B;
 text-align: center; 
@@ -125,12 +134,184 @@ line-height: normal;
 .captcha{
     width: 100px;
     height: 42px;
+    transform: scale(0.75);
+    transform-origin: 0 0;
 }
 
 .captchasign{
     width: 100px;
     height: 42px;
     margin-bottom: 30px;
+    transform: scale(0.75);
+    transform-origin: 0 0;
+}
+
+/* sign in option tablet*/
+@media screen and (max-width: 912px){
+    .bg{
+        display: none;
+    }
+
+    .cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: auto; 
+        max-width: 600px;
+    }
+
+    .SignInHeader{
+        margin-top: 20px;
+    }
+
+    .signin{
+        text-align: center;
+    }
+
+    .text1{
+        text-align: center;
+        width: 480px;
+    }
+
+    .help{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: right;
+    }
+
+    .recap{
+        max-width: fit-content;
+        text-align: center; 
+        margin: auto;
+        vertical-align:middle;
+    }
+
+}
+
+/* ipad mini */
+@media screen and (max-width: 768px){
+    .bg{
+        display: none;
+    }
+
+    .cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: auto; 
+        max-width: 580px;
+    }
+    
+    .logo{
+        margin-left: 20px;
+    }
+
+    .SignInHeader{
+        margin-top: 20px;
+    }
+
+    .signin{
+        text-align: center;
+    }
+
+    .text1{
+        text-align: center;
+        width: 480px;
+    }
+
+    .help{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: right;
+    }
+
+    .formtext{
+        width: 480px;
+    }
+    
+}
+
+/* phone */
+@media screen and (min-width: 320px) and (max-width: 667px){
+    .bg{
+        display: none;
+    }
+
+    .cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: auto;
+        max-width: 375px;
+    }
+
+    .SignInHeader{
+        margin-top: 20px;
+    }
+
+    .logo{
+        width: 50px;
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    .subtitle{
+        font-size: 20px;
+    }
+
+    .signin{
+        text-align: center;
+    }
+
+    .text1{
+        text-align: center;
+        width: 359px;
+    }
+
+    .button{
+        max-width: 170px;
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .help{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: right;
+    }
+
+    .formtext{
+        max-width: fit-content ;
+        text-align: center;
+    }
+
+    .captcha{
+        width: 100px;
+        height: 42px;
+        transform: scale(0.75);
+        transform-origin: 0 0;
+        margin-left: 76px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .btnlogin{
+        width: 150px;
+        height: 42px;
+        font-size: 16px;
+        margin-left: 100px;
+    }
+    
 }
 
 /* scroll design  */

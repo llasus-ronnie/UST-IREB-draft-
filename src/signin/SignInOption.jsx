@@ -18,9 +18,9 @@ function SignIn() {
               <Col>
                 <img src={bg2} alt="" className='bg' />
               </Col>
-              <Col style={{marginTop: '60px', marginRight:'40px'}}>
+              <Col className='SignInHeader'>
               
-              <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center'}}>
+              <div className='Sign'>
               <img src={logo} alt="" className='logo d-inline' />
               <h1 className='subtitle d-inline' style={{margin: '5px'}}><b className='title d-inline'>UST IREB</b> Research Portal</h1>
               </div>
@@ -36,7 +36,9 @@ function SignIn() {
               </div>
 
               <hr ></hr>
-              <p className='help d-inline'><a href='/' style={{color: '#FCBF15'}}>Return to Home</a></p>
+              <div className='help'>
+                <p className='d-inline'><a href='/' style={{color: '#FCBF15'}}>Return to Home</a></p>
+              </div>
 
               </Col>
           </Row>

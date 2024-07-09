@@ -26,9 +26,9 @@ const errorMessage = (error) => {
               <Col>
                 <img src={bg} alt="" className='bg' />
               </Col>
-              <Col style={{marginTop: '35px', marginRight:'40px'}}>
+              <Col className='SignInHeader'>
               
-              <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center'}}>
+              <div className='Sign'>
               <img src={logo} alt="" className='logo d-inline' />
               <h1 className='subtitle d-inline' style={{margin: '5px'}}><b className='title d-inline'>UST IREB</b> Research Portal</h1>
               </div>
@@ -37,14 +37,21 @@ const errorMessage = (error) => {
 
               <p className='text1'>Welcome, Thomasian! To access all IREB research portal submission features, sign in with your UST Google Account.</p>
               <p className='text1'>Kindly check the box below to proceed.</p>
-              <ReCAPTCHA style={{transform:"scale(0.75)", transformOrigin:"0 0"}} className='captchasign' sitekey="6LfgAgkqAAAAAC_WvkqfnkIF-NUvwHnVOPyDkD2G" size='normal' /> 
-              <GoogleLogin className='google' onSuccess={responseMessage} onError={errorMessage} />
 
+              <div className='recap'>
+                <ReCAPTCHA className='captchasign' sitekey="6LfgAgkqAAAAAC_WvkqfnkIF-NUvwHnVOPyDkD2G" size='normal' /> 
+                <GoogleLogin className='google' onSuccess={responseMessage} onError={errorMessage} />
+              </div>
+              
               <hr ></hr>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Terms of Service</a></p>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Privacy Policy</a></p>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Help</a></p>
-              <p className='help d-inline' style={{margin: '5px'}} ><a href='/' style={{color: '#FCBF15'}}>Return to Home</a></p>
+
+              <div className='help'>
+              <p className='d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Terms of Service</a></p>
+              <p className='d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Privacy Policy</a></p>
+              <p className='d-inline' style={{margin: '5px'}} ><a href='#' style={{color: '#8B8B8B'}}>Help</a></p>
+              <p className='d-inline' style={{margin: '5px'}} ><a href='/' style={{color: '#FCBF15'}}>Return to Home</a></p>
+              </div>
+
 
               </Col>
           </Row>
