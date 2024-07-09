@@ -15,6 +15,7 @@ import flowchartImage from '../assets/home/section-6-flowchart.png'
 
 // css
 import '../styles/home/home.css'
+import { Helmet } from 'react-helmet'
 
 export default function Home() {  
     return(
@@ -22,6 +23,10 @@ export default function Home() {
             <div className='header'>
                 <Navbar />
             </div>
+
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
                 
                 {/* section 1 */}
 

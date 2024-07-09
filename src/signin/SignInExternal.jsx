@@ -14,17 +14,16 @@ function SignIn() {
         <style>{'body { background-color: #ECF0F1; }'}</style>
       </Helmet>
       
-      <Container className='cont-border'>
-          <Row className="justify-content-md-center g-0">
+      <Container>
+          <Row className="cont-border g-0">
               <Col>
                 <img src={bg} alt="" className='bg' />
               </Col>
-              <Col style={{marginTop: '46px'}}>
+              <Col style={{marginTop: '46px', marginRight:'40px'}}>
               
               <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center'}}>
               <img src={logo} alt="" className='logo d-inline' />
-               <h1 className='title d-inline' style={{margin: '5px'}}>UST IREB</h1>
-               <h1 className='subtitle d-inline' style={{margin: '5px'}}>Research Portal</h1>
+              <h1 className='subtitle d-inline' style={{margin: '5px'}}><b className='title d-inline'>UST IREB</b> Research Portal</h1>
               </div>
 
               <h1 className='signin'>Sign In</h1>
