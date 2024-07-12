@@ -10,6 +10,10 @@
     --poppins: 'Poppins', sans-serif;
 }
 
+.navbar-div{
+    position: relative;
+    z-index: 10;
+}
 .submissions-card{
     background-color: var(--quaternary-color);
     border-radius: 10px;
@@ -51,6 +55,10 @@
 }
 
 /* switch */
+.switch{
+    position: relative;
+    z-index: 0;
+}
 .switch.card{
     height: 2em;
     width: 4em;
