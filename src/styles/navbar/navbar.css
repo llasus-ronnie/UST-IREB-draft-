@@ -14,7 +14,7 @@
 .navbar{
     background-color: var(--primary-color);
     width: 100%;
-    position: absolute;
+    position: relative;
 
     z-index:1 ;
 }

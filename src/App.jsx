@@ -7,6 +7,7 @@ import SubmissionFormsP1 from './forms/SubmissionFormsP1';
 import SubmissionFormsP2 from './forms/SubmissionFormsP2';
 import SubmissionFormsP3 from './forms/SubmissionFormsP3';
 import Home from './home/Home';
+import MySubmissions from './submissions/Submissions';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="/SubmissionFormsP2" element={<SubmissionFormsP2 />} />
       <Route path="/SubmissionFormsP3" element={<SubmissionFormsP3 />} />
       <Route path="/Home" element={<Home />} />
+      <Route path="/MySubmissions" element={<MySubmissions />} />
     </Routes>
     </>
     

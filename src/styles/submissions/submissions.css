@@ -1,0 +1,140 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #121212;
+    --secondary-color: #ecf0f1; 
+    --tertiary-color: #FCBF15;
+    --quaternary-color: #FFFFFF;
+
+    --poppins: 'Poppins', sans-serif;
+}
+
+.submissions-card{
+    background-color: var(--quaternary-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+.submissions-card-title h1{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--quaternary-color);
+    margin-bottom: 1rem;
+    padding: 1em;
+
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+    margin-bottom: 1rem;
+    font-family: var(--poppins);
+    text-align: center;
+    width: 100%;
+}
+
+.submissions-card-content{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.submissions-content{
+    padding: 2em;
+}
+
+.submissions-title{
+    padding: 1em 0em 0em 2em;
+    font-family: var(--poppins);
+    width: 100%;
+}
+
+/* switch */
+.switch.card{
+    height: 2em;
+    width: 4em;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.3em;
+    padding: 0.5em;
+    border-radius: 10px;
+    transition: 1s ease;
+
+}
+
+.switch-line{
+    display: block;
+    width: 1em;
+    height: 1em;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.switch.list{
+    height: 3em;
+    width: 3em;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+    padding: 0.5em;
+    border-radius: 10px;
+    transition: 1s ease;
+
+}
+
+.switch.list .switch-line{
+    display: block;
+    width: 1em;
+    height: 0.5em;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+/* table code */
+table, td, tr, th{
+    border: 2px solid rgba(0, 0, 0, 0.123);
+    width: fit-content;
+
+    font-family: var(--poppins);
+}
+
+table{
+    width: 100%;
+    
+}
+
+.card-3-button{
+    width: auto;
+    height: 2em;
+    font-size: 1em;
+}
+
+tr td:nth-child(5) {
+    width: 100%;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* mobile views */
+@media screen and (max-width: 768px) {
+    .submissions-card-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .submissions-title{
+        padding: 1em 0em 0em 1em;
+        text-align: center;
+    }
+    
+}

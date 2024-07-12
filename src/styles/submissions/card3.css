@@ -1,0 +1,122 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #121212;
+    --secondary-color: #ecf0f1; 
+    --tertiary-color: #FCBF15;
+    --quaternary-color: #FFFFFF;
+
+    --poppins: 'Poppins', sans-serif;
+}
+
+
+.card-3{
+    width: 100%;
+    background-color: transparent;
+    border: 1.5px solid var(--primary-color);
+    width: 23rem;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+
+    font-family: var(--poppins)
+}
+
+.card-3-title h1{
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.card-3-span{
+    height: 1.5px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.337);
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.card-3-date{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.card-3-span-left{
+    font-size: 1rem;
+}
+
+.card-3-span-right{
+    font-weight: bold;
+    margin-left: 1em;
+    
+}
+
+.card-3-status{
+    border: 2px solid rgba(0, 0, 0, 0.123);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #28A745;
+    font-size: 0.9rem;
+}
+.card-3-button{
+    background-color: var(--tertiary-color);
+    border: none;
+    color: white;
+    padding: 5px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+/* mobile views */
+@media screen and (max-width: 768px) {
+    .card-3{
+        text-align: center;
+        width: 100%;
+    }
+
+    .card-3 p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 769px) {
+    .card-3 p, .card-3 h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* section 2 small tablet view */
+@media screen and (max-width: 912px) {
+    .card-3{
+        width: 100%;
+        background-color: transparent;
+        width: 23rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+}
