@@ -83,7 +83,7 @@ export default function Submissions() {
                                     <td>{item.date}</td>
                                     <td>{item.rec}</td>
                                     <td className='card-3-status'>{item.status}</td>
-                                    <td className='button-td'><button className="card-3-button">View</button></td>
+                                    <td className=''><button className="card-3-button">View</button></td>
                                 </tr>
                             ))}
                         </tbody>

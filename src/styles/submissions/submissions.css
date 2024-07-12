@@ -144,5 +144,17 @@ tr td:nth-child(5) {
         padding: 1em 0em 0em 1em;
         text-align: center;
     }
+
+    .submissions-list{
+        display: none;
+    }
+    
+    .switch.list{
+        display: none;
+    }
+
+    .switch.card{
+        display: none ;
+    }
     
 }
