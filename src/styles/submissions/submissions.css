@@ -14,11 +14,15 @@
     position: relative;
     z-index: 10;
 }
-.submissions-card{
+.submissions-card.card{
     background-color: var(--quaternary-color);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+}
+
+.submissions-card.list{
+    display: none;
 }
 
 
@@ -138,15 +142,18 @@ tr td:nth-child(5) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        display: block;
     }
+
+
+    .submissions-list.card{
+        display: block;
+    }
+
 
     .submissions-title{
         padding: 1em 0em 0em 1em;
         text-align: center;
-    }
-
-    .submissions-list{
-        display: none;
     }
     
     .switch.list{

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 //components
 import Navbar from '../navbar/Navbar';
@@ -20,6 +20,20 @@ export default function Submissions() {
         { title: 'Research 2', date: '2022-01-02', rec: 'REC 2', status: 'Status 2' },
         // Add more items here...
     ]);
+
+        useEffect(() => {
+            const handleResize = () => {
+                if (window.matchMedia('(max-width: 767px)').matches) {
+                    setIsListView(false);
+                }
+            };
+                window.addEventListener('resize', handleResize);
+                handleResize();
+                return () => {
+                window.removeEventListener('resize', handleResize);
+            };
+        }, []); 
+
     return (
         <>
         <div className='navbar-div'>
