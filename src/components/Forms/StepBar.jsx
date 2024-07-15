@@ -5,7 +5,7 @@ import '../../styles/forms/Forms.css'
 function StepBar() {
   return (
     <div>
-      <Container style={{paddingTop:'100px'}}>
+      <Container style={{paddingTop:'50px'}}>
         <Row className='nav'>
           <Col className='d-flex flex-column align-items-center text-center colpad'>
             <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 62 62" fill="none">
