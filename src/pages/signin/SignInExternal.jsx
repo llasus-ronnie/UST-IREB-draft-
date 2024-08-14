@@ -31,7 +31,7 @@ function SignIn() {
               <Form>
                 <FormGroup>
                   <div className='formtext'>
-                  <FormLabel>Username</FormLabel>
+                  <FormLabel>Email</FormLabel>
                     <input type='text' className='form-control' />
                     <FormLabel>Password</FormLabel>
                     <input type='password' className='form-control' />
