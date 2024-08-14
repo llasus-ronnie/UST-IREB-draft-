@@ -1,8 +1,8 @@
 import { Container, Col, Row, Form, FormGroup, FormLabel, Button } from 'react-bootstrap'
 import { Helmet } from 'react-helmet'
-import bg from '../assets/SignIn/bg.png'
-import logo from '../assets/SignIn/USTLogo.png'
-import '../styles/signin/SignIn.css'
+import bg from '../../assets/SignIn/bg.png'
+import logo from '../../assets/SignIn/USTLogo.png'
+import '../../styles/signin/SignIn.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReCAPTCHA from 'react-google-recaptcha'
 

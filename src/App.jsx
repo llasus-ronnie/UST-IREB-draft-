@@ -1,13 +1,14 @@
 import React from "react";
 import {Routes, Route} from "react-router-dom";
-import SignIn from './signin/SignIn';
-import SignInOption from './signin/SignInOption';
-import SignInExternal from './signin/SignInExternal';
-import SubmissionFormsP1 from './forms/SubmissionFormsP1';
-import SubmissionFormsP2 from './forms/SubmissionFormsP2';
-import SubmissionFormsP3 from './forms/SubmissionFormsP3';
-import Home from './home/Home';
-import MySubmissions from './submissions/Submissions';
+import SignIn from '../src/pages/signin/SignIn';
+import SignInOption from '../src/pages/signin/SignInOption';
+import SignInExternal from '../src/pages/signin/SignInExternal';
+
+import SubmissionFormsP1 from '../src/pages/forms/SubmissionFormsP1';
+import SubmissionFormsP2 from '../src/pages/forms/SubmissionFormsP2';
+import SubmissionFormsP3 from '../src/pages/forms/SubmissionFormsP3';
+import Home from '../src/pages/home/Home';
+import MySubmissions from './pages/submissions/Submissions';
 
 function App() {
   return (

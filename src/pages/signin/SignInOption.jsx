@@ -1,8 +1,8 @@
 import { Container, Col, Row, Button } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
-import bg2 from '../assets/SignIn/bg-2.png';
-import logo from '../assets/SignIn/USTLogo.png';
-import '../styles/signin/SignIn.css';
+import bg2 from '../../assets/SignIn/bg-2.png';
+import logo from '../../assets/SignIn/USTLogo.png';
+import '../../styles/signin/SignIn.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function SignIn() {

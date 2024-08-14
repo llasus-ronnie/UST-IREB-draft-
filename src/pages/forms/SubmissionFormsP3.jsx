@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import StepBar from '../components/Forms/StepBar';
-import Navbar from '../navbar/Navbar';
+import StepBar from '../../components/Forms/StepBar';
+import Navbar from '../../components/navbar/Navbar';
 import { Container, Row, Form, FormLabel, FormSelect, FormControl, Button } from 'react-bootstrap';
 
 function SubmissionFormP3() {

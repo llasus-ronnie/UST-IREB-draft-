@@ -1,9 +1,9 @@
-import '../styles/navbar/navbar.css';
+import '../../styles/navbar/navbar.css';
 import { useState } from 'react';
 
 //images
-import logout from '../assets/navbar/navbar-logout.png';
-import userIcon from '../assets/navbar/sidenav-user.png'; 
+import logout from '../../assets/navbar/navbar-logout.png';
+import userIcon from '../../assets/navbar/sidenav-user.png'; 
 
 
 export default function Navbar() {

@@ -1,20 +1,20 @@
 //components
-import Navbar from '../navbar/Navbar'
+import Navbar from '../../components/navbar/Navbar'
 import Card from '../home/Card'
 import Card2 from '../home/Card2'
-import Footer from '../footer/Footer'
+import Footer from '../../components/footer/Footer'
 
 //images
-import viewIcon from '../assets/home/card/card-view-icon.png'
-import submitIcon from '../assets/home/card/card-submit-icon.png'
-import profileIcon from '../assets/home/card/card-profile-icon.png'
-import faqIcon from '../assets/home/card/card-faq-icon.png'
+import viewIcon from '../../assets/home/card/card-view-icon.png'
+import submitIcon from '../../assets/home/card/card-submit-icon.png'
+import profileIcon from '../../assets/home/card/card-profile-icon.png'
+import faqIcon from '../../assets/home/card/card-faq-icon.png'
 
-import irebImage from '../assets/home/section-3-ust-ireb.png'
-import flowchartImage from '../assets/home/section-6-flowchart.png'
+import irebImage from '../../assets/home/section-3-ust-ireb.png'
+import flowchartImage from '../../assets/home/section-6-flowchart.png'
 
 // css
-import '../styles/home/home.css'
+import '../../styles/home/home.css'
 import { Helmet } from 'react-helmet'
 
 export default function Home() {  

@@ -1,8 +1,8 @@
 //sa wakas footer nalang 
-import '../styles/footer/footer.css';
+import '../../styles/footer/footer.css';
 
 //images
-import ustLogo from '../assets/footer/ust-logo.png'
+import ustLogo from '../../assets/footer/ust-logo.png'
 
 export default function Footer() {
     return(

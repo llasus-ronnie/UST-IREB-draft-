@@ -1,5 +1,5 @@
 //css
-import '../styles/submissions/card3.css';
+import '../../styles/submissions/card3.css';
 
 export default function Card3(props) {
     return(

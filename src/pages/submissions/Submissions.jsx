@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 
 //components
-import Navbar from '../navbar/Navbar';
-import Card3 from '../submissions/Card3';
+import Navbar from '../../components/navbar/Navbar';
+import Card3 from './Card3';
 
 //css
-import '../styles/submissions/submissions.css';
+import '../../styles/submissions/submissions.css';
 
 export default function Submissions() {
 
