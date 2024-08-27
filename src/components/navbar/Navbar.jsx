@@ -17,18 +17,18 @@ export default function Navbar() {
 
     return(
         <>
-                {/* Hamburger */}
-                <div className='hamburger-bg'>
+            <div className="navbar">
+                <div className='navbar-left'> 
+                
+                                    {/* Hamburger */}
+                                    <div className='hamburger-bg'>
                 <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
                     <div className="line"></div>
                     <div className="line"></div>
                     <div className="line"></div>
                 </div>
-
                 </div>
-
-            <div className="navbar">
-                <div className='navbar-left'> 
+                
                 {/* Navbar Title */}
                 <h1 className="navbar-title">
                     <span className='yellow-text'>UST IREB </span> 
@@ -46,6 +46,7 @@ export default function Navbar() {
             
                  {/* Sidenav */}
                  <div className={`sidenav ${isOpen ? 'open' : ''}`}>
+
                     <div className='sidenav-account'>
                         <img src={userIcon} alt="" className="logout-icon"/>
                         <a href="/SignInOption">View Account</a>
