@@ -2,25 +2,47 @@
 import '../../styles/footer/footer.css';
 
 //images
-import ustLogo from '../../assets/footer/ust-logo.png'
+import ustLogo from '../../assets/footer/ust-logo.png';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export default function Footer() {
-    return(
-        <>
-        <div className="footer">
-
-            <div className='footer-top'>
-            <img src={ustLogo} alt="" className="ireb-image"/>
-        <h1>
-        <span className='yellow-text'>UST IREB </span> 
-        <span>Research Portal</span>
-        </h1>
+return(
+    <>
+    <Container>
+        <Row className='footer'>
+            {/* column 1 */}
+            <Col lg={6}>
+            {/* logo/header */}
+            <div className="ust-ireb-logo">
+                <img src={ustLogo} alt="ust-logo" />
+                <h1>UST IREB</h1>
+                <h1> Research Portal </h1>
             </div>
 
-            <div className='footer-bottom'>
-                <p>© 2024. University of Santo Tomas - Institutional Research Ethics Board. All rights reserved.</p>
-            </div>
-    </div>
-        </>
-    )
+            <p className='col-1-p'>
+            © 2024. University of Santo Tomas - Institutional Research Ethics Board. All rights reserved.
+            </p>
+            </Col>
+
+            {/* column 2 */}
+            <Col 
+            md={4}
+            style={{ paddingLeft: '4rem', paddingRight:'3rem' }}>
+
+                <p className='ust-ireb-address'>
+                Administration Office, Ground Floor, Thomas Aquinas Research Complex University of Santo Tomas España Boulevard, Sampaloc, Manila 1008, Philippines
+                </p>
+            </Col>
+
+            {/* column 3 */}
+            <Col md={2} className='ust-ireb-contacts'>
+            <p>ustirebemailhere@domain.com</p>
+            <p>+63-2-8731-5396 <br/>+63-2-3406-1611 local 8247</p>
+            </Col>
+        </Row>
+    </Container>
+    </>
+)
 }

@@ -1,21 +1,29 @@
 :root{
     --primary-color: #121212;
-    --secondary-color: #ecf0f1; 
+    --secondary-color: #CFCFCF; 
     --tertiary-color: #FCBF15;
-    --quaternary-color: #FFFFFF;
+    --quaternary-color: #FFFCF7;
 
     --poppins: 'Poppins', sans-serif;
+
+    --title-size: 2rem;
+    --heading-1-size: 1.5rem;
+    --paragraph-size: 0.85rem;
 }
 
 .card{
-    width: 23em;
-    height: 33.4em;
+    width: 18em;
+    height: 30em;
 
-    background-color: var(--quaternary-color);
+    background-color: #FFFCF7;
+    box-shadow: 0 0 9px #0000003a;
     border-radius: 10px;
-    align-items: center;
+
+
+    display: flex;
     justify-content: center;
-    box-shadow: 0 0 10px #BDBDBD;
+    align-items: center;
+    gap: 0.5rem;
 
     font-family: var(--poppins);
 }
@@ -23,23 +31,24 @@
 .card-content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 0.5em;
-    padding: 1.5em;
+    padding: 3.5rem;
+    text-align: left;
 
 }
 
 .card h1{
-    font-size: 1.5em !important;
-    text-align: center !important;
+    font-size: var(--heading-1-size) !important;
+    text-align: left !important;
     text-align: left;
     font-weight: 700;
     line-height: 35px;
 }
 
 .card p{
-    font-size: 1rem !important;
+    font-size: var(--paragraph-size) !important;
     text-align: left;
     font-style: normal;
     font-weight: 400;
@@ -47,24 +56,34 @@
 }
 
 .card button{
-    width: 10em;
-    height: 3em;
+    width: 10rem;
+    height: 2.5rem;
     background-color: var(--primary-color);
     border: none;
     border-radius: 10px;
-    font-size: 1rem;
-    font-family: var(--poppins);
+    font-size: var(--paragraph-size);
     color: var(--quaternary-color);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.248);
+
+    position: absolute;
+    bottom: 4rem;
+}
+
+.card button:hover{
+    transform: scale(1.1);
+    transform: translateY(-0.2em);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.248);
+    transition: 0.3s;
 }
 
 .card img{
-    width: 5em;
-    height: 5em;
+    width: 3.5em;
+    height: 3.5em;
     display: flex;
     flex-shrink: 0;
 
-    position: relative;
-    top: -3em;
+    position: absolute;
+    top: 4rem;
 }
 
 /* section 3 mid-tablet view */

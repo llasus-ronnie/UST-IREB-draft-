@@ -1,20 +1,24 @@
 //components
 import Navbar from '../../components/navbar/Navbar'
 import Card from '../home/Card'
-import Card2 from '../home/Card2'
 import Footer from '../../components/footer/Footer'
+import Carousel from '../../components/carousel/Slider'
 
 //images
 import viewIcon from '../../assets/home/card/card-view-icon.png'
 import submitIcon from '../../assets/home/card/card-submit-icon.png'
 import profileIcon from '../../assets/home/card/card-profile-icon.png'
 import faqIcon from '../../assets/home/card/card-faq-icon.png'
+import whitefaqicon from '../../assets/home/white-faq-icon.png'
+import flowchart from '../../assets/home/section-4-flowchart.png'
 
-import irebImage from '../../assets/home/section-3-ust-ireb.png'
-import flowchartImage from '../../assets/home/section-6-flowchart.png'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 // css
 import '../../styles/home/home.css'
+
 import { Helmet } from 'react-helmet'
 
 export default function Home() {  
@@ -28,9 +32,9 @@ export default function Home() {
                 <title>Home</title>
             </Helmet>
                 
-                {/* section 1 */}
 
-                <div className='body'>
+                <body>
+                 {/* section 1 */}
                 <div className='section-1'>
                     <div className='section-1-content'>
                         <h1>Welcome!</h1>
@@ -44,6 +48,9 @@ export default function Home() {
                         </div>
                     </div>
                     </div>
+
+                    <div className="yellow-bar"></div>
+
                 {/* section 2 */}
                     <div className='section-2'> 
                         <div className='section-2-content'>
@@ -72,66 +79,56 @@ export default function Home() {
                     {/* card 4 */}
                     <Card
                     image = {faqIcon}
-                    title = 'Frequently Asked Questions'
+                    title = 'Frequent Questions'
                     content ='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor '
                     />
                         </div>
                     </div>
 
-                    {/* section 3 */}
+                {/* section 3 */}
                     <div className='section-3'>
-                        <div className='section-3-content'>
-                            <div className='col-1'>
-                                <img src={irebImage} alt='ust ireb image'>
-                                </img>
-                            </div>
-
-                            <div className='col-2'>
-                                <h1>About UST IREB</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-                                <br/> <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
-                            </div>
-                        </div>
+                        <Carousel />
                     </div>
 
-                    {/* section 4 */}
+                    <div className="yellow-bar"></div>
+
+                {/* section 4 */}
                     <div className='section-4'>
-
-                        {/* mission */}
-                        <Card2 
-                        title ='Mission'
-                        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '/>
-
-                        {/* vision */}
-                        <Card2
-                        title ='Vision'
-                        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '/>
-                    </div>
-
-
-                    {/* section 5 */}
-                    <div className='section-5'>
-                        <span></span>
-                    </div>
-
-                    {/* section 6 */}
-                    <div className='section-6'>
-                        <div className='section-6-content'>
+                    <Container>
+                        <Row className='row-alignment'>
+                            {/* column 1 */}
+                            <Col>
+                            <img src={whitefaqicon} alt='faq icon' className='section-4-faq'/>
                             <h1>Process of Submission</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                            <img src={flowchartImage} alt='flowchart image'></img>
                             <ol>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</li> 
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</li>
+                                <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                </li>
 
-</ol>
-                        </div>
+                                <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                </li>
+
+                                <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                </li>
+
+                                <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                </li>
+                                </ol>
+                            </Col>
+                            
+                            {/* column 2 */}
+                            <Col>
+                            <img src={flowchart} alt="" className='section-4-flowchart'/>
+                            </Col>
+                        </Row>
+                        </Container>
                     </div>
 
-                </div>
+                </body>
 
                 <div className='footer'>
                     <Footer />

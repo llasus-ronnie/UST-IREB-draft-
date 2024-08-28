@@ -9,9 +9,8 @@ import userIcon from '../../assets/navbar/sidenav-user.png';
 export default function Navbar() {
 
         const [isOpen, setIsOpen] = useState(false);
-      
         const toggleMenu = () => {
-          setIsOpen(!isOpen);
+        setIsOpen(!isOpen);
         };  
 
 
@@ -28,7 +27,7 @@ export default function Navbar() {
                     <div className="line"></div>
                 </div>
                 </div>
-                
+
                 {/* Navbar Title */}
                 <h1 className="navbar-title">
                     <span className='yellow-text'>UST IREB </span> 
@@ -45,11 +44,11 @@ export default function Navbar() {
 
             
                  {/* Sidenav */}
-                 <div className={`sidenav ${isOpen ? 'open' : ''}`}>
+                <div className={`sidenav ${isOpen ? 'open' : ''}`}>
 
                     <div className='sidenav-account'>
                         <img src={userIcon} alt="" className="logout-icon"/>
-                        <a href="/SignInOption">View Account</a>
+                        <a href="/SignInOption" className='view-account'>View Account</a>
                     </div>
 
                     <div className='sidenav-links'>
