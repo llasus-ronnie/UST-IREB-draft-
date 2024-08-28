@@ -13,7 +13,7 @@ return (
 <Carousel data-bs-theme="light">
 
 {/* about ireb */}
-<Carousel.Item interval={6000}>
+<Carousel.Item interval={5000}>
 <img
     className="d-block w-100"
     src={img3}
@@ -29,7 +29,7 @@ return (
 </Carousel.Item>
 
 {/* mission */}
-<Carousel.Item interval={6000}>
+<Carousel.Item interval={5000}>
 <img
     className="d-block w-100"
     src= {img1}
@@ -42,7 +42,7 @@ return (
 </Carousel.Item>
 
 {/* vision */}
-<Carousel.Item interval={6000}>
+<Carousel.Item interval={5000}>
 <img
     className="d-block w-100"
     src={img2}

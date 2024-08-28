@@ -48,7 +48,7 @@ export default function Navbar() {
 
                     <div className='sidenav-account'>
                         <img src={userIcon} alt="" className="logout-icon"/>
-                        <a href="/SignInOption">View Account</a>
+                        <a href="/SignInOption" className="view-account">View Account</a>
                     </div>
 
         <div className="sidenav-links">
