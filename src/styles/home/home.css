@@ -88,6 +88,7 @@ body{
         justify-content: center;
         text-align: center;
         font-size: 0.6em;
+        padding: 1rem;
     }
 
     .section-1-content h1{
@@ -96,6 +97,9 @@ body{
 
     .section-1-content{
         left:0;
+        position: relative;
+
+        top: 1rem;
     }
 
     .get-started, .learn-more{
@@ -114,6 +118,16 @@ body{
         display: flex;
         justify-content: center;
         gap: 1em;
+    }
+}
+
+/* section 2 tablet view */
+@media screen and (max-width: 912px) {
+    .section-1-content{
+        left:0;
+        position: relative;
+        bottom: 15rem;
+        padding: 5rem;
     }
 }
 

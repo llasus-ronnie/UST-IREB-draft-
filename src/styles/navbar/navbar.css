@@ -261,8 +261,24 @@ height: auto;
 
 /* mobile views */
 @media screen and (max-width: 768px) {
+    .navbar{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
 .sidenav.open {
-    width: 100%;
+    width: 100vw;
+    position: fixed;
+}
+
+.sidenav-account{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
 }
 
 .navbar-title{
