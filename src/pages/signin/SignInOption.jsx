@@ -1,49 +1,66 @@
-import { Container, Col, Row, Button } from 'react-bootstrap';
-import { Helmet } from 'react-helmet';
-import bg2 from '../../assets/SignIn/bg-2.png';
-import logo from '../../assets/SignIn/USTLogo.png';
-import '../../styles/signin/SignIn.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Col, Row, Button } from "react-bootstrap";
+import { Helmet } from "react-helmet";
+import bg2 from "../../assets/SignIn/bg-2.png";
+import logo from "../../assets/SignIn/USTLogo.png";
+import home from "../../assets/SignIn/home.png";
+import "../../styles/signin/SignInOption.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function SignIn() {
   return (
-    <div className='cont'>
+    <>
       <Helmet>
         <title>Sign In</title>
-        <style>{'body { background-color: #ECF0F1; }'}</style>
+        <style>{"body { background-color: #ECF0F1; }"}</style>
       </Helmet>
-      
-      <Container>
-          <Row className="cont-border justify-content-md-center g-0">
-              <Col>
-                <img src={bg2} alt="" className='bg' />
-              </Col>
-              <Col className='SignInHeader'>
-              
-              <div className='Sign'>
-              <img src={logo} alt="" className='logo d-inline' />
-              <h1 className='subtitle d-inline' style={{margin: '5px'}}><b className='title d-inline'>UST IREB</b> Research Portal</h1>
-              </div>
 
-              <h1 className='signin'>Sign In</h1>
+      <div className="signin-wrapper">
+        <Container className="signin-container">
+          <Row>
+            <Col md={4} className="p-0 left-column">
+              <img src={bg2} alt="bg2" className="signin-background" />
+            </Col>
+            <Col md={8} className="p-0 right-column">
+              <Container className="signin-header">
+                <img src={logo} alt="logo" className="signin-logo" />
+                <h1 className="d-inline">
+                  UST IREB <b> Research Portal </b>
+                </h1>
+              </Container>
 
-              <p className='text1'>Kindly select your category to log in. </p>
+              <Container className="signin-title">
+                <h1>Sign In</h1>
+                <p>Kindly select your category to login.</p>
+              </Container>
 
-              <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center', marginTop: '40px'}}>
-                <Button variant="outline-warning" href='/SignIn' className='button'>Thomasian Primary Investigator</Button>
-                <Button variant="outline-warning" href='/SignInExternal' className='button'>External Primary Investigator</Button>
-              </div>
+              <Container className="signin-options">
+                <Button className="signin-option" href="/SignIn">
+                  Thomasian <br /> Primary Investigator
+                </Button>
 
-              <hr ></hr>
-              <div className='help'>
-                <p className='d-inline'><a href='/' style={{color: '#FCBF15'}}>Return to Home</a></p>
-              </div>
+                <Button className="signin-option" href="/SignInExternal">
+                  External <br /> Primary Investigator
+                </Button>
+              </Container>
 
-              </Col>
+              <Row className="signin-hr">
+                <hr />
+              </Row>
+
+              <Container className="signin-footer">
+                <Row>
+                  <a href="/">
+                    <img src={home} alt="home" className="home-icon" />
+                    Return to Home
+                  </a>
+                </Row>
+              </Container>
+            </Col>
           </Row>
-      </Container>
-    </div>
-  )
+        </Container>
+      </div>
+    </>
+  );
 }
 
-export default SignIn
+export default SignIn;
