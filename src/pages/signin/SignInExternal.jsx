@@ -16,30 +16,30 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 function SignIn() {
   return (
-    <div className="cont">
+    <div className="thomasian-cont">
       <Helmet>
         <title>Sign In</title>
         <style>{"body { background-color: #ECF0F1; }"}</style>
       </Helmet>
 
       <Container>
-        <Row className="cont-border g-0">
+        <Row className="thomasian-cont-border g-0">
           <Col>
-            <img src={bg} alt="" className="bg" />
+            <img src={bg} alt="" className="thomasian-bg" />
           </Col>
-          <Col className="SignInHeader">
-            <div className="Sign">
-              <img src={logo} alt="" className="logo d-inline" />
-              <h1 className="subtitle d-inline" style={{ margin: "5px" }}>
-                <b className="title d-inline">UST IREB</b> Research Portal
+          <Col className="thomasian-SignInHeader">
+            <div className="thomasian-Sign">
+              <img src={logo} alt="" className="thomasian-logo" />
+              <h1 className="d-inline">
+                <b>UST IREB</b> Research Portal
               </h1>
             </div>
 
-            <h1 className="signin">Sign In</h1>
+            <h1 className="thomasian-signin">Sign In</h1>
 
             <Form>
               <FormGroup>
-                <div className="formtext">
+                <div className="thomasian-formtext">
                   <FormLabel>Email</FormLabel>
                   <input type="text" className="form-control" />
                   <FormLabel>Password</FormLabel>
@@ -48,9 +48,9 @@ function SignIn() {
 
                 <Row className="align-items-center">
                   <Col>
-                    <div className="captchasign-container">
+                    <div className="thomasian-captchasign-container">
                       <ReCAPTCHA
-                        className="captchasign"
+                        className="thomasian-captchasign"
                         sitekey="6LfgAgkqAAAAAC_WvkqfnkIF-NUvwHnVOPyDkD2G"
                         size="normal"
                       />
@@ -60,7 +60,7 @@ function SignIn() {
                     <Button
                       variant="outline-warning"
                       href="/"
-                      className="btnlogin"
+                      className="thomasian-btnlogin"
                     >
                       Log In
                     </Button>
@@ -71,7 +71,7 @@ function SignIn() {
 
             <hr></hr>
 
-            <div className="help">
+            <div className="thomasian-help">
               <p className="d-inline" style={{ margin: "5px" }}>
                 <a href="#" style={{ color: "#8B8B8B" }}>
                   Terms of Service

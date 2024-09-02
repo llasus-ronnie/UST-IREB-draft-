@@ -28,43 +28,43 @@ function SignIn() {
   };
 
   return (
-    <div className="cont">
+    <div className="thomasian-cont">
       <Helmet>
         <title>Sign In</title>
         <style>{"body { background-color: #ECF0F1; }"}</style>
       </Helmet>
 
       <Container>
-        <Row className="cont-border justify-content-md-center g-0">
-          <Col className="lft">
-            <img src={bg} alt="" className="bg" />
+        <Row className="thomasian-cont-border justify-content-md-center g-0">
+          <Col className="thomasian-lft">
+            <img src={bg} alt="" className="thomasian-bg" />
           </Col>
-          <Col className="SignInHeader">
-            <div className="Sign">
-              <img src={logo} alt="" className="logo" />
-              <h1 className="subtitle" style={{ margin: "5px" }}>
-                <b className="title">UST IREB</b> Research Portal
+          <Col className="thomasian-SignInHeader">
+            <div className="thomasian-Sign">
+              <img src={logo} alt="" className="thomasian-logo" />
+              <h1 className="d-inline">
+                <b>UST IREB</b> Research Portal
               </h1>
             </div>
 
-            <h1 className="signin">Sign In</h1>
+            <h1 className="thomasian-signin">Sign In</h1>
 
-            <p className="text1">
+            <p className="thomasian-text">
               Welcome, Thomasian! To access all IREB research portal submission
               features, sign in with your UST Google Account. <br /> <br />{" "}
               Kindly check the box below to proceed.
             </p>
 
-            <div className="recap">
+            <div className="thomasian-recap">
               <GoogleLogin
-                className="google"
+                className="thomasian-google"
                 onSuccess={responseMessage}
                 onError={errorMessage}
                 disabled={!isRecaptchaVerified}
               />
               <div className="captchasign-container">
                 <ReCAPTCHA
-                  className="captchasign"
+                  className="thomasian-captchasign"
                   sitekey="6LfgAgkqAAAAAC_WvkqfnkIF-NUvwHnVOPyDkD2G"
                   size="normal"
                   onChange={handleRecaptchaChange}
@@ -74,7 +74,7 @@ function SignIn() {
 
             <hr />
 
-            <div className="help">
+            <div className="thomasian-help">
               <p className="d-inline" style={{ margin: "5px" }}>
                 <a href="#" style={{ color: "#8B8B8B" }}>
                   Terms of Service

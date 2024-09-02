@@ -11,7 +11,7 @@
   --paragraph-size: 0.85rem;
 }
 
-.cont {
+.thomasian-cont {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,51 +20,55 @@
   max-width: 1000px;
 }
 
-.cont-border {
+.thomasian-cont-border {
   border-radius: 50px;
   background-color: white;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
-.SignInHeader {
-  margin-top: 35px;
+.thomasian-SignInHeader {
+  margin-top: 30px;
   margin-right: 40px;
 }
 
-.Sign {
+.thomasian-Sign {
   display: flex;
   justify-content: left;
   align-items: center;
 }
 
-.bg {
-  width: 21.063em;
-  height: 29em;
-}
-
-.logo {
-  width: 60px;
-  height: 60px;
-}
-
-.title {
-  color: #fcbf15;
-  font-family: Poppins;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.subtitle {
-  color: #121212;
-  font-family: Poppins;
-  font-size: 30px;
+.thomasian-Sign h1 {
+  color: var(--primary-color);
+  font-family: var(--poppins);
+  font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.signin {
+.thomasian-Sign b {
+  color: var(--tertiary-color);
+  font-family: var(--poppins);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
+.thomasian-bg {
+  width: 21.063em;
+  height: 29em;
+}
+
+.thomasian-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.thomasian-signin {
   color: #121212;
   font-family: Poppins;
   font-size: 30px;
@@ -74,7 +78,7 @@
   margin-top: 20px;
 }
 
-.text1 {
+.thomasian-text {
   color: #121212;
   font-family: Poppins;
   font-size: 16px;
@@ -83,7 +87,7 @@
   line-height: normal;
 }
 
-.help {
+.thomasian-help {
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -93,7 +97,7 @@
 
 /* sign in option */
 
-.button {
+.thomasian-button {
   color: #000;
   font-family: Poppins;
   font-size: 18px;
@@ -109,7 +113,7 @@
   vertical-align: middle;
 }
 
-.btnlogin {
+.thomasian-btnlogin {
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0.5rem;
@@ -127,7 +131,7 @@
   margin-top: 2rem;
 }
 
-.formtext {
+.thomasian-formtext {
   color: #121212;
   font-family: Poppins;
   font-size: 16px;
@@ -136,7 +140,7 @@
   line-height: normal;
 }
 
-.captchasign {
+.thomasian-captchasign {
   width: 100px;
   height: 42px;
   margin-top: 20px;
@@ -146,11 +150,11 @@
 
 /* sign in option tablet*/
 @media screen and (max-width: 1000px) {
-  .bg {
+  .thomasian-bg {
     display: none;
   }
 
-  .cont {
+  .thomasian-cont {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,27 +163,23 @@
     max-width: 600px;
   }
 
-  .SignInHeader {
-    margin-top: 20px;
-  }
-
-  .signin {
+  .thomasian-signin {
     text-align: center;
   }
 
-  .text1 {
+  .thomasian-text {
     text-align: center;
     width: 480px;
   }
 
-  .help {
+  .thomasian-help {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: right;
   }
 
-  .recap {
+  .thomasian-recap {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,25 +187,25 @@
     margin-top: 20px;
   }
 
-  .google {
+  .thomasian-google {
     width: 100%;
     max-width: 300px;
   }
 
-  .captchasign-container {
+  .thomasian-captchasign-container {
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
   }
 
-  .captchasign {
+  .thomasian-captchasign {
     transform: scale(0.85);
     transform-origin: center;
     width: auto;
     margin-top: 0;
   }
 
-  .captchasign iframe {
+  .thomasian-captchasign iframe {
     width: 100% !important;
     max-width: 100% !important;
     transform: scale(0.85);
@@ -214,11 +214,11 @@
 
 /* ipad mini */
 @media screen and (max-width: 768px) {
-  .bg {
+  .thomasian-bg {
     display: none;
   }
 
-  .cont {
+  .thomasian-cont {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,113 +227,114 @@
     max-width: 580px;
   }
 
-  .logo {
+  .thomasian-logo {
     margin-left: 20px;
   }
 
-  .SignInHeader {
+  .thomasian-SignInHeader {
     margin-top: 20px;
   }
 
-  .signin {
+  .thomasian-signin {
     text-align: center;
   }
 
-  .text1 {
+  .thomasian-text {
     text-align: center;
   }
 
-  .help {
+  .thomasian-help {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: right;
   }
 
-  .formtext {
+  .thomasian-formtext {
     width: 480px;
   }
 
-  .captchasign-container .btnlogin {
+  .thomasian-captchasign-container .thomasian-btnlogin {
     flex-direction: column;
     margin-left: 0;
   }
 
-  .btnlogin {
+  .thomasian-btnlogin {
     margin-left: 150px;
   }
 }
 
 /* phone */
 @media screen and (min-width: 320px) and (max-width: 467px) {
-  .bg {
+  .thomasian-bg {
     display: none;
   }
 
-  .lft {
+  .thomasian-lft {
     display: none;
   }
 
-  .cont {
+  .thomasian-cont {
     justify-content: center;
     align-items: center;
     height: 100vh;
     max-width: 375px;
   }
 
-  .Sign {
+  .thomasian-Sign {
     flex-direction: column;
     justify-content: center;
     margin-right: 0;
   }
 
-  .SignInHeader {
+  .thomasian-Sign h1 {
+    font-size: 22px;
+  }
+
+  .thomasian-Sign b {
+    font-size: 22px;
+  }
+
+  .thomasian-SignInHeader {
     margin-top: 20px;
     margin-right: 0;
   }
 
-  .logo {
+  .thomasian-logo {
     width: 50px;
     height: 50px;
     margin-left: 0;
   }
 
-  .title {
-    font-size: 20px;
-  }
-
-  .subtitle {
-    font-size: 20px;
-  }
-
-  .signin {
+  .thomasian-signin {
     text-align: center;
   }
 
-  .text1 {
+  .thomasian-text {
     text-align: center;
     width: fit-content;
   }
 
-  .button {
+  .thomasian-button {
     max-width: 170px;
     height: 60px;
     font-size: 14px;
   }
 
-  .help {
+  .thomasian-help {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: right;
   }
 
-  .formtext {
+  .thomasian-formtext {
     max-width: fit-content;
     text-align: center;
+    margin-left: 65px;
   }
 
-  .captcha {
+  .thomasian-captcha {
     width: 100px;
     height: 42px;
     transform: scale(0.75);
@@ -343,7 +344,7 @@
     margin-bottom: 20px;
   }
 
-  .btnlogin {
+  .thomasian-btnlogin {
     width: 150px;
     height: 42px;
     font-size: 16px;
@@ -352,8 +353,12 @@
 }
 
 @media screen and (max-width: 320px) {
-  .btnlogin {
+  .thomasian-btnlogin {
     margin-left: 70px;
+  }
+
+  .thomasian-formtext {
+    margin-left: 37px;
   }
 }
 
