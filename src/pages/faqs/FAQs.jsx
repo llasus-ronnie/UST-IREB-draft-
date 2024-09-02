@@ -2,8 +2,6 @@ import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 
-import FAQsheader from "../../assets/faqs/faqsheader.png";
-
 import "../../styles/faqs/faqs.css";
 import { Helmet } from "react-helmet";
 
@@ -25,7 +23,7 @@ function FAQs() {
         <h1 className="text-center">Frequently Asked Questions</h1>
       </div>
 
-      <Row className="divider" />
+      <Row className="faqdivider" />
 
       <Container>
         <Accordion style={{ paddingTop: "2em" }}>
